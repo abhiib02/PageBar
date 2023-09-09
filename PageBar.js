@@ -24,7 +24,7 @@ function init(color,height,shadow,shadowColor,border){
   document.body.appendChild(style);
   document.body.appendChild(bar);
 }
-init(color,height,shadow,shadowColor,borderRadius);
+init(pb_color,pb_height,pb_shadow,pb_shadowColor,pb_borderRadius);
 window.addEventListener("scroll", setScrollVar)
 window.addEventListener("resize", setScrollVar)
 var bar = document.querySelector('.bar');
