@@ -1,6 +1,11 @@
 # PageBar.js
 pagebar.js is very small snippet of code that gives a simple bar on the top to show how much page scroll left.
 
+standalone code 
+no html
+no css
+only add js file
+
 just add this script tag to add pagebar to you webpage
 ```html
 <script src="https://cdn.jsdelivr.net/gh/abhiib02/PageBar/PageBar.js"></script>
