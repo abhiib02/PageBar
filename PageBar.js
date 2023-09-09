@@ -1,21 +1,22 @@
-let pb_color = "#ff0"; 
-let pb_height = "5";
-let pb_shadow = "10px";
-let pb_shadowColor = "#f00";
-let pb_borderRadius = "10";
 
-function init(color,height,shadow,shadowColor,border){
+
+function pb_init({color,height,shadow,shadowColor,border}){
+  let local_color = color ? color : "#ff0"; 
+  let local_height = height ? height : "5";
+  let local_shadow = shadow ? shadow : "10px";
+  let local_shadowColor = shadowColor ? shadowColor : "#f00";
+  let local_borderRadius = border ? border : "10";
   let style = document.createElement('style');
   style.textContent=`
   .bar{
-  height:${height}px;
+  height:${local_height}px;
   width:var(--width);
-  background:${color};
-  filter:drop-shadow(0 0 ${shadow}px ${shadowColor});
+  background:${local_color};
+  filter:drop-shadow(0 0 ${local_shadow}px ${local_shadowColor});
   position:fixed;
   top:0;
   left:0;
-  border-radius:${border}px;
+  border-radius:${local_borderRadius}px;
   z-index:10000;
 }`;
   let bar = document.createElement('div');
@@ -24,7 +25,7 @@ function init(color,height,shadow,shadowColor,border){
   document.body.appendChild(style);
   document.body.appendChild(bar);
 }
-init(pb_color,pb_height,pb_shadow,pb_shadowColor,pb_borderRadius);
+pb_init();
 window.addEventListener("scroll", setScrollVar)
 window.addEventListener("resize", setScrollVar)
 var bar = document.querySelector('.bar');
