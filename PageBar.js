@@ -1,6 +1,6 @@
 
 
-function pb_init({color,height,shadow,shadowColor,border}){
+function pb_init(color,height,shadow,shadowColor,border){
   let local_color = color ? color : "#ff0"; 
   let local_height = height ? height : "5";
   let local_shadow = shadow ? shadow : "10px";
