@@ -1,8 +1,8 @@
-let color = "#ff0"; 
-let height = "5";
-let shadow = "10px";
-let shadowColor = "#f00";
-let borderRadius = "10";
+let pb_color = "#ff0"; 
+let pb_height = "5";
+let pb_shadow = "10px";
+let pb_shadowColor = "#f00";
+let pb_borderRadius = "10";
 
 function init(color,height,shadow,shadowColor,border){
   let style = document.createElement('style');
