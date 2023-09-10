@@ -44,6 +44,5 @@ to make even more customization create css class like this in head
 }
 ```
 Codepen Example and working 
-```
+
 https://codepen.io/abhishek-bhardwaj/pen/VwVyrmb?editors=1111
-```
