@@ -12,7 +12,7 @@ just add this script tag to add pagebar to you webpage
 </body>
 </html>
 ```
-to customize bar for you own liking 
+to customize bar for you own liking in js Without making css class
 ```html
 <script src="https://cdn.jsdelivr.net/gh/abhiib02/PageBar/PageBar.js"></script>
  <script>
@@ -26,4 +26,19 @@ to customize bar for you own liking
   </script>
 </body>
 </html>
+```
+to make even more customization create css class like this in head
+( putting !important is necessary as library make new a another instance of css class and will result not changing according to your customization )
+```css
+.bar {
+    height: 5px !important;
+    width: var(--width) !important;
+    background: #ff0;  !important; 
+    filter: drop-shadow(0 0 10pxpx #f00)  !important; 
+    position: fixed  !important; 
+    top: 0  !important; 
+    left: 0  !important; 
+    border-radius: 10px  !important; 
+    z-index: 10000  !important; 
+}
 ```
