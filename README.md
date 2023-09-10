@@ -30,6 +30,7 @@ to customize bar for you own liking in js Without making css class
 to make even more customization create css class like this in head
 
 >putting !important is necessary as library make a new another instance of css class and will result not changing according to your customization
+>and dont put width property in it as is manipulated by library and in result it will do glitches if you put in css class
 ```css
 .bar {
     height: 5px !important;
