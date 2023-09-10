@@ -33,7 +33,6 @@ to make even more customization create css class like this in head
 ```css
 .bar {
     height: 5px !important;
-    width: var(--width) !important;
     background: #ff0;  !important; 
     filter: drop-shadow(0 0 10pxpx #f00)  !important; 
     position: fixed  !important; 
