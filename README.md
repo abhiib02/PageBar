@@ -5,7 +5,7 @@ standalone code
 no html
 no css
 only add js file
-
+ 
 just add this script tag to add pagebar to you webpage
 ```html
 <script src="https://cdn.jsdelivr.net/gh/abhiib02/PageBar/PageBar.js"></script>
